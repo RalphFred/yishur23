@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@200&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  position: relative;
+  height: 100%;
+  background: rgb(9,5,87);
+  background: linear-gradient(75deg, rgba(9,5,87,1) 4%, rgba(15,22,97,1) 39%, #235293 100%);
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  height: 100vh;
+}
+
+.swiper {
+  width: 400px;
+  height: 550px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+
+h1{
+  font-family: 'Gluten', cursive;
+}
+
+@media screen and (max-width: 768px) {
+  .swiper {
+    width: 400px;
+    height: 550px;
+  }
+}
+
+
+@media screen and (max-width: 560px) {
+  .swiper {
+    width: 250px;
+    height: 400px;
+  }
+}
